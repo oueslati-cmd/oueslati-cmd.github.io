@@ -1,76 +1,88 @@
 <!doctype html>
 <html lang="fr">
-<header class="header">
-  <div class="container header__inner">
-    <a class="logo" href="/">OMAR<span>.</span></a>
-
-    <nav class="nav" id="nav">
-      <a href="/#about">À propos</a>
-      <a href="/#skills">Compétences</a>
-      <a href="/#projects">Projets</a>
-      <a href="/projects/">Tous les projets</a>
-      <a href="/contact/">Contact</a>
-      <a class="btn btn--ghost" href="/assets/Omar_Oueslati_CV.pdf" target="_blank" rel="noreferrer">
-        CV (PDF)
-      </a>
-    </nav>
-
-    <button class="burger" id="burger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projets | Omar Mohamed Oueslati</title>
+  <meta name="description" content="Liste de projets — Omar Mohamed Oueslati." />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a class="logo" href="../">OMAR<span>.</span></a>
+      <a class="logo" href="/">OMAR<span>.</span></a>
 
-      <nav class="nav">
-        <a href="../#about">À propos</a>
-        <a href="../#skills">Compétences</a>
-        <a href="../#projects">Accueil Projets</a>
-        <a href="../#contact">Contact</a>
-        <a class="btn btn--ghost" href="../assets/Omar_Oueslati_CV.pdf" target="_blank">CV</a>
+      <nav class="nav" id="nav">
+        <a href="/#about">À propos</a>
+        <a href="/#skills">Compétences</a>
+        <a href="/projects/">Projets</a>
+        <a href="/#experience">Expérience</a>
+        <a href="/contact/">Contact</a>
+        <a class="btn btn--ghost" href="/assets/Omar_Oueslati_CV.pdf" target="_blank" rel="noreferrer">CV (PDF)</a>
       </nav>
+
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <main class="section">
     <div class="container">
-      <h1>Mes projets</h1>
-      <p class="muted">Liste complète des projets (contenu provisoire).</p>
+      <div class="section__head">
+        <h1>Projets</h1>
+        <a class="btn btn--ghost" href="/">← Retour à l’accueil</a>
+      </div>
+
+      <p class="muted">Page dédiée aux projets (placeholder). Vous pourrez enrichir chaque fiche plus tard.</p>
 
       <div class="grid grid--3">
         <article class="card project">
-          <h3>Gestion clinique</h3>
-          <p class="muted">Symfony • PHP • MySQL • Python • ML</p>
+          <div class="project__top">
+            <h3>Gestion clinique (Web)</h3>
+            <p class="muted">Symfony • PHP • MySQL</p>
+          </div>
+          <p class="muted">Objectif, fonctionnalités, résultats, screenshots, liens.</p>
+          <div class="project__actions">
+            <a class="btn btn--sm" href="#" aria-disabled="true">Demo</a>
+            <a class="btn btn--sm btn--ghost" href="#" aria-disabled="true">Code</a>
+          </div>
         </article>
 
         <article class="card project">
-          <h3>Travela</h3>
-          <p class="muted">FlutterFlow • Firebase</p>
+          <div class="project__top">
+            <h3>Travela (Mobile)</h3>
+            <p class="muted">FlutterFlow • Firebase</p>
+          </div>
+          <p class="muted">Réservations, avis, auth, etc. (placeholder).</p>
+          <div class="project__actions">
+            <a class="btn btn--sm" href="#" aria-disabled="true">Demo</a>
+            <a class="btn btn--sm btn--ghost" href="#" aria-disabled="true">Code</a>
+          </div>
         </article>
 
         <article class="card project">
-          <h3>E-learning</h3>
-          <p class="muted">PHP • SQL • Bootstrap</p>
+          <div class="project__top">
+            <h3>E-learning</h3>
+            <p class="muted">PHP • SQL • Bootstrap</p>
+          </div>
+          <p class="muted">Quiz, forum, suivi des progrès (placeholder).</p>
+          <div class="project__actions">
+            <a class="btn btn--sm" href="#" aria-disabled="true">Demo</a>
+            <a class="btn btn--sm btn--ghost" href="#" aria-disabled="true">Code</a>
+          </div>
         </article>
       </div>
-
-      <p style="margin-top:20px;">
-        <a class="btn" href="../">← Retour à l’accueil</a>
-      </p>
     </div>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
       <p class="muted">© <span id="year"></span> Omar Mohamed Oueslati</p>
+      <a class="muted" href="/">Accueil</a>
     </div>
   </footer>
 
-  <script defer src="../assets/js/main.js"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>

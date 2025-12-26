@@ -1,44 +1,38 @@
 <!doctype html>
 <html lang="fr">
-<header class="header">
-  <div class="container header__inner">
-    <a class="logo" href="/">OMAR<span>.</span></a>
-
-    <nav class="nav" id="nav">
-      <a href="/#about">À propos</a>
-      <a href="/#skills">Compétences</a>
-      <a href="/#projects">Projets</a>
-      <a href="/projects/">Tous les projets</a>
-      <a href="/contact/">Contact</a>
-      <a class="btn btn--ghost" href="/assets/Omar_Oueslati_CV.pdf" target="_blank" rel="noreferrer">
-        CV (PDF)
-      </a>
-    </nav>
-
-    <button class="burger" id="burger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Omar Mohamed Oueslati</title>
+  <meta name="description" content="Contact — Omar Mohamed Oueslati." />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a class="logo" href="../">OMAR<span>.</span></a>
+      <a class="logo" href="/">OMAR<span>.</span></a>
 
-      <nav class="nav">
-        <a href="../#about">À propos</a>
-        <a href="../#skills">Compétences</a>
-        <a href="../projects/">Projets</a>
-        <a href="../#contact">Contact</a>
+      <nav class="nav" id="nav">
+        <a href="/#about">À propos</a>
+        <a href="/#skills">Compétences</a>
+        <a href="/projects/">Projets</a>
+        <a href="/#experience">Expérience</a>
+        <a href="/contact/">Contact</a>
+        <a class="btn btn--ghost" href="/assets/Omar_Oueslati_CV.pdf" target="_blank" rel="noreferrer">CV (PDF)</a>
       </nav>
+
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <main class="section">
     <div class="container">
-      <h1>Contact</h1>
+      <div class="section__head">
+        <h1>Contact</h1>
+        <a class="btn btn--ghost" href="/">← Retour à l’accueil</a>
+      </div>
 
       <div class="grid grid--2">
         <div class="card">
@@ -47,31 +41,26 @@
             Ariana, Tunisie<br/>
             <a href="mailto:oueslati.omarmohamed@esprit.tn">oueslati.omarmohamed@esprit.tn</a><br/>
             <a href="tel:+21658660038">+216 58660038</a><br/>
-            <a href="https://github.com/oueslati-cmd" target="_blank">GitHub</a>
+            <a href="https://github.com/oueslati-cmd" target="_blank" rel="noreferrer">GitHub</a>
           </p>
         </div>
 
         <div class="card">
           <h3>Message</h3>
-          <p class="muted">Contact direct par email.</p>
-          <a class="btn" href="mailto:oueslati.omarmohamed@esprit.tn?subject=Contact%20Portfolio">
-            Envoyer un email
-          </a>
+          <p class="muted">Option simple : mailto (propre, sans backend).</p>
+          <a class="btn" href="mailto:oueslati.omarmohamed@esprit.tn?subject=Contact%20Portfolio">Envoyer un email</a>
         </div>
       </div>
-
-      <p style="margin-top:20px;">
-        <a class="btn btn--ghost" href="../">← Retour à l’accueil</a>
-      </p>
     </div>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
       <p class="muted">© <span id="year"></span> Omar Mohamed Oueslati</p>
+      <a class="muted" href="/">Accueil</a>
     </div>
   </footer>
 
-  <script defer src="../assets/js/main.js"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>

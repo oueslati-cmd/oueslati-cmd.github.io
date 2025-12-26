@@ -1,39 +1,24 @@
 <!doctype html>
 <html lang="fr">
-<header class="header">
-  <div class="container header__inner">
-    <a class="logo" href="/">OMAR<span>.</span></a>
-
-    <nav class="nav" id="nav">
-      <a href="/#about">À propos</a>
-      <a href="/#skills">Compétences</a>
-      <a href="/#projects">Projets</a>
-      <a href="/projects/">Tous les projets</a>
-      <a href="/contact/">Contact</a>
-      <a class="btn btn--ghost" href="/assets/Omar_Oueslati_CV.pdf" target="_blank" rel="noreferrer">
-        CV (PDF)
-      </a>
-    </nav>
-
-    <button class="burger" id="burger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Omar Mohamed Oueslati | Portfolio</title>
+  <meta name="description" content="Portfolio de Omar Mohamed Oueslati — Ingénierie informatique : software, web, systèmes, ML." />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a class="logo" href="#top">OMAR<span>.</span></a>
+      <a class="logo" href="/#top">OMAR<span>.</span></a>
 
       <nav class="nav" id="nav">
-        <a href="#about">À propos</a>
-        <a href="#skills">Compétences</a>
-        <a href="#projects">Projets</a>
-        <a href="#experience">Expérience</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn--ghost" href="assets/Omar_Oueslati_CV.pdf" target="_blank" rel="noreferrer">CV (PDF)</a>
+        <a href="/#about">À propos</a>
+        <a href="/#skills">Compétences</a>
+        <a href="/#projects">Projets</a>
+        <a href="/#experience">Expérience</a>
+        <a href="/contact/">Contact</a>
+        <a class="btn btn--ghost" href="/assets/Omar_Oueslati_CV.pdf" target="_blank" rel="noreferrer">CV (PDF)</a>
       </nav>
 
       <button class="burger" id="burger" aria-label="Menu">
@@ -44,29 +29,39 @@
 
   <main id="top">
     <section class="hero">
-  <div class="container hero__grid">
-    <div>
-      <p class="tag">Étudiant Ingénieur Informatique</p>
-      <h1>Omar Mohamed Oueslati</h1>
-      <p class="lead">
-        Développement logiciel • Web • Desktop • Systèmes • ML (projets académiques & pratiques)
-      </p>
+      <div class="container hero__grid">
+        <div>
+          <p class="tag">Étudiant Ingénieur — Logiciel • Web • Systèmes • ML</p>
+          <h1>Omar Mohamed Oueslati</h1>
+          <p class="lead">
+            Portfolio professionnel : projets, compétences et livrables. Contenu évolutif.
+          </p>
+          <div class="hero__cta">
+            <a class="btn" href="/#projects">Voir les projets</a>
+            <a class="btn btn--ghost" href="https://github.com/oueslati-cmd" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn btn--ghost" href="/contact/">Me contacter</a>
+          </div>
 
-      <div class="hero__cta">
-        <a class="btn" href="/projects/">Voir mes projets</a>
-        <a class="btn btn--ghost" href="https://github.com/oueslati-cmd" target="_blank">GitHub</a>
-        <a class="btn btn--ghost" href="/assets/Omar_Oueslati_CV.pdf">CV (PDF)</a>
+          <div class="meta">
+            <div><strong>Localisation</strong><br/>Ariana, Tunisie</div>
+            <div><strong>Email</strong><br/>oueslati.omarmohamed@esprit.tn</div>
+            <div><strong>Téléphone</strong><br/>+216 58660038</div>
+          </div>
+        </div>
+
+        <div class="card portrait">
+          <div class="portrait__placeholder">
+            <p>Photo (optionnel)<br/><span>/assets/img/profile.jpg</span></p>
+          </div>
+          <div class="portrait__badges">
+            <span class="badge">Java</span>
+            <span class="badge">Symfony</span>
+            <span class="badge">JavaFX</span>
+            <span class="badge">Python</span>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="card portrait">
-      <div class="portrait__placeholder">
-        <p>Photo professionnelle<br><span>assets/img/profile.jpg</span></p>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <section class="section" id="about">
       <div class="container">
@@ -117,7 +112,7 @@
       <div class="container">
         <div class="section__head">
           <h2>Projets</h2>
-          <a class="btn btn--ghost" href="projects/index.html">Tous les projets</a>
+          <a class="btn btn--ghost" href="/projects/">Tous les projets</a>
         </div>
 
         <div class="grid grid--3">
@@ -197,10 +192,10 @@
   <footer class="footer">
     <div class="container footer__inner">
       <p class="muted">© <span id="year"></span> Omar Mohamed Oueslati</p>
-      <a class="muted" href="#top">Haut de page ↑</a>
+      <a class="muted" href="/#top">Haut de page ↑</a>
     </div>
   </footer>
 
-  <script defer src="assets/js/main.js"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>

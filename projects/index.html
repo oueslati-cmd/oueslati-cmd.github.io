@@ -4,15 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Projets | Omar Mohamed Oueslati</title>
-  <meta name="description" content="Liste de projets — Omar Mohamed Oueslati." />
+  <meta name="description" content="Sélection de projets — Omar Mohamed Oueslati." />
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
+
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a class="logo" href="/">OMAR<span>.</span></a>
+      <a class="logo" href="/#top">OMAR<span>.</span></a>
 
-      <nav class="nav" id="nav">
+      <nav class="nav" id="nav" aria-label="Navigation principale">
         <a href="/#about">À propos</a>
         <a href="/#skills">Compétences</a>
         <a href="/projects/">Projets</a>
@@ -21,65 +22,67 @@
         <a class="btn btn--ghost" href="/assets/Omar_Oueslati_CV.pdf" target="_blank" rel="noreferrer">CV (PDF)</a>
       </nav>
 
-      <button class="burger" id="burger" aria-label="Menu">
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-controls="nav" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <div class="section__head">
-        <h1>Projets</h1>
-        <a class="btn btn--ghost" href="/">← Retour à l’accueil</a>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Projets</h2>
+          <a class="btn btn--ghost" href="/#projects">Retour accueil</a>
+        </div>
+
+        <p class="muted">Page dédiée : vous pouvez détailler chaque projet (stack, objectifs, résultats, liens).</p>
+
+        <div class="grid grid--3" style="margin-top:14px">
+          <article class="card project">
+            <div class="project__top">
+              <h3>Gestion clinique (Web)</h3>
+              <p class="muted">Symfony • PHP • MySQL</p>
+            </div>
+            <p class="muted">Placeholder : ajouter métriques, captures, repo, démo.</p>
+            <div class="project__actions">
+              <a class="btn btn--sm" href="#" aria-disabled="true">Demo</a>
+              <a class="btn btn--sm btn--ghost" href="#" aria-disabled="true">Code</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project__top">
+              <h3>Travela (Mobile)</h3>
+              <p class="muted">FlutterFlow • Firebase</p>
+            </div>
+            <p class="muted">Placeholder.</p>
+            <div class="project__actions">
+              <a class="btn btn--sm" href="#" aria-disabled="true">Demo</a>
+              <a class="btn btn--sm btn--ghost" href="#" aria-disabled="true">Code</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project__top">
+              <h3>E-learning</h3>
+              <p class="muted">PHP • SQL • Bootstrap</p>
+            </div>
+            <p class="muted">Placeholder.</p>
+            <div class="project__actions">
+              <a class="btn btn--sm" href="#" aria-disabled="true">Demo</a>
+              <a class="btn btn--sm btn--ghost" href="#" aria-disabled="true">Code</a>
+            </div>
+          </article>
+        </div>
       </div>
-
-      <p class="muted">Page dédiée aux projets (placeholder). Vous pourrez enrichir chaque fiche plus tard.</p>
-
-      <div class="grid grid--3">
-        <article class="card project">
-          <div class="project__top">
-            <h3>Gestion clinique (Web)</h3>
-            <p class="muted">Symfony • PHP • MySQL</p>
-          </div>
-          <p class="muted">Objectif, fonctionnalités, résultats, screenshots, liens.</p>
-          <div class="project__actions">
-            <a class="btn btn--sm" href="#" aria-disabled="true">Demo</a>
-            <a class="btn btn--sm btn--ghost" href="#" aria-disabled="true">Code</a>
-          </div>
-        </article>
-
-        <article class="card project">
-          <div class="project__top">
-            <h3>Travela (Mobile)</h3>
-            <p class="muted">FlutterFlow • Firebase</p>
-          </div>
-          <p class="muted">Réservations, avis, auth, etc. (placeholder).</p>
-          <div class="project__actions">
-            <a class="btn btn--sm" href="#" aria-disabled="true">Demo</a>
-            <a class="btn btn--sm btn--ghost" href="#" aria-disabled="true">Code</a>
-          </div>
-        </article>
-
-        <article class="card project">
-          <div class="project__top">
-            <h3>E-learning</h3>
-            <p class="muted">PHP • SQL • Bootstrap</p>
-          </div>
-          <p class="muted">Quiz, forum, suivi des progrès (placeholder).</p>
-          <div class="project__actions">
-            <a class="btn btn--sm" href="#" aria-disabled="true">Demo</a>
-            <a class="btn btn--sm btn--ghost" href="#" aria-disabled="true">Code</a>
-          </div>
-        </article>
-      </div>
-    </div>
+    </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
       <p class="muted">© <span id="year"></span> Omar Mohamed Oueslati</p>
-      <a class="muted" href="/">Accueil</a>
+      <a class="muted" href="/#top">Haut de page ↑</a>
     </div>
   </footer>
 

@@ -7,12 +7,13 @@
   <meta name="description" content="Contact — Omar Mohamed Oueslati." />
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
+
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a class="logo" href="/">OMAR<span>.</span></a>
+      <a class="logo" href="/#top">OMAR<span>.</span></a>
 
-      <nav class="nav" id="nav">
+      <nav class="nav" id="nav" aria-label="Navigation principale">
         <a href="/#about">À propos</a>
         <a href="/#skills">Compétences</a>
         <a href="/projects/">Projets</a>
@@ -21,43 +22,50 @@
         <a class="btn btn--ghost" href="/assets/Omar_Oueslati_CV.pdf" target="_blank" rel="noreferrer">CV (PDF)</a>
       </nav>
 
-      <button class="burger" id="burger" aria-label="Menu">
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-controls="nav" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <div class="section__head">
-        <h1>Contact</h1>
-        <a class="btn btn--ghost" href="/">← Retour à l’accueil</a>
-      </div>
-
-      <div class="grid grid--2">
-        <div class="card">
-          <h3>Coordonnées</h3>
-          <p class="muted">
-            Ariana, Tunisie<br/>
-            <a href="mailto:oueslati.omarmohamed@esprit.tn">oueslati.omarmohamed@esprit.tn</a><br/>
-            <a href="tel:+21658660038">+216 58660038</a><br/>
-            <a href="https://github.com/oueslati-cmd" target="_blank" rel="noreferrer">GitHub</a>
-          </p>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <a class="btn btn--ghost" href="/#contact">Retour accueil</a>
         </div>
 
-        <div class="card">
-          <h3>Message</h3>
-          <p class="muted">Option simple : mailto (propre, sans backend).</p>
-          <a class="btn" href="mailto:oueslati.omarmohamed@esprit.tn?subject=Contact%20Portfolio">Envoyer un email</a>
+        <div class="grid grid--2" style="margin-top:14px">
+          <div class="card">
+            <h3>Coordonnées</h3>
+            <p class="muted">
+              Ariana, Tunisie<br/>
+              <a href="mailto:oueslati.omarmohamed@esprit.tn">oueslati.omarmohamed@esprit.tn</a><br/>
+              <a href="tel:+21658660038">+216 58660038</a><br/>
+              <a href="https://github.com/oueslati-cmd" target="_blank" rel="noreferrer">GitHub</a>
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Message</h3>
+            <p class="muted">Sans backend : envoi direct via email.</p>
+            <a class="btn" href="mailto:oueslati.omarmohamed@esprit.tn?subject=Contact%20Portfolio&body=Bonjour%20Omar,%0A%0A">
+              Envoyer un email
+            </a>
+            <p class="muted" style="margin-top:12px">
+              Alternative (plus tard) : formulaire + service (Formspree, Netlify Forms, etc.).
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
       <p class="muted">© <span id="year"></span> Omar Mohamed Oueslati</p>
-      <a class="muted" href="/">Accueil</a>
+      <a class="muted" href="/#top">Haut de page ↑</a>
     </div>
   </footer>
 
